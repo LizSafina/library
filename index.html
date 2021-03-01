@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My library app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="library.css">
+    </head>
+    <header><div class= "wrapper"><h1>My Library</h1></div></header>
+    <body>
+       <div class= "buttonWrapper"><button class="addNewBook">+ New Book</button></div>
+       <div class= "formWrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Done reading?</th>
+                
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+           <div class="popupForm">
+               <form class="form">
+                   <label for="bName">Name of the book</label></br>
+                   <input type="text" id="bName" name="bName" placeholder="The Little Prince" required></br></br>
+                   <label for="authorName">Author</label></br>
+                   <input type="text" id="author" name="author" placeholder="Antoine de Saint-Exupery" required></br></br>
+                   <label for="pages">How many pages are in the book?</label></br>
+                   <input type="text" id="pages" name="pages" placeholder="109" required></br></br>
+                   <label for="read">Did you finish reading it?</label></br>
+                   <input type="text" id="read" name="read" required placeholder="yes"></br></br>
+                   <button type="submit" class="upload">Submit</button></br>
+                   <button type="button" class="cancel">Close</button>
+               </form>
+           </div>
+       </div>
+       
+       <script src="library.js"></script>
+    </body>
+</html>
+  
