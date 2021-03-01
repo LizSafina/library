@@ -38,8 +38,11 @@ var form = document.querySelector('.form').addEventListener('submit', (event)=>
      <td>${newBook.title}</td>
      <td>${newBook.author}</td>
      <td>${newBook.pages}</td>
-     <td><input type="checkbox" id="myToggleButton" /></td>
-     <td><a href="#" id=${library.indexOf(newBook)} class="btn">X</a></td>
+     <td><label class="switch">
+     <input type="checkbox">
+     <span class="slider round"></span>
+   </label></td>
+     <td><a href="#" id=${library.indexOf(newBook)} class="btn delete">X</a></td>
      `;
     booksList.appendChild(row);
  
@@ -65,6 +68,14 @@ document.querySelector(".cancel").addEventListener('click', function(){
 let popUpForm = document.querySelector(".popupForm");
 
 
+function deleteBook(el){
+  if(el.classList.contains('delete')){
+      el.parentElement.parentElement.remove();
+  }
+}
 
 
-
+//Remove a Book
+document.querySelector('#book-list').addEventListener('click',(e)=>{
+    deleteBook(e.target);
+})
