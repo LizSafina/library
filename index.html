@@ -20,13 +20,13 @@
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
-                    <th>Pages</th>
-                    <th>Done reading?</th>
-                
+                    <th>Pages</th>              
                 </tr>
             </thead>
-            <tbody id="book-list"></tbody>
+            <tbody id="book-list"><div class="btnHolder"></div> </tbody>
         </table>
+           
+        
            <div class="popupForm">
                <form class="form">
                    <label for="bName">Name of the book</label></br>
@@ -35,8 +35,8 @@
                    <input type="text" id="author" name="author" placeholder="Antoine de Saint-Exupery" required></br></br>
                    <label for="pages">How many pages are in the book?</label></br>
                    <input type="text" id="pages" name="pages" placeholder="109" required></br></br>
-                   <label for="read">Did you finish reading it?</label></br>
-                   <input type="text" id="read" name="read" required placeholder="yes"></br></br>
+                   <label class=>Finished the book yet?</label></br>
+                    <input type="checkbox" id="isRead"></br></br>
                    <button type="submit" class="upload">Submit</button></br>
                    <button type="button" class="cancel">Close</button>
                </form>
