@@ -46,11 +46,12 @@ body{
 .popupForm{
     display:none;
     position: fixed;
-    left:80%;
-    top:25%;
+    left:50%;
+    top:28%;
     transform: translate(-50%, 5%);
     border:3px solid black;
     z-index: 9 ;
+    background-color: lightblue;
 }
 
 .form{
@@ -70,14 +71,17 @@ label{
     font-weight: bold;
 }
 
-a{
+a.delete{
    text-decoration: none;
-   color: inherit;
+   color: white;
    padding: 4px 6px 4px 6px;
    background-color: rgb(253, 37, 37);
    border-radius: 5px;
    border:1px solid black;
    
+}
+a{
+  text-decoration: none;
 }
 a:hover{
 opacity: 0.8;
@@ -104,29 +108,33 @@ opacity: 0.8;
   transform:scale(1.1);
 }
 
-#readBtn{
+.readBtn{
   width: 80px;
   height: 30px;
+  font-size: 20px;
   text-align: center;
-  padding-top:5px;
-  grid-column:3/4;
 }
 tr{
-
   width: 100%;
   
 }
 table{
-  
+  border-collapse: collapse;
   width:100%;
   padding:0%;
   margin: 0%;
   
 }
-.btnHolder{
-  width: 83px;
-}
-thead{
-  margin-top: 0px;
+
+th{
   background-color: rgb(255, 255, 255);
+}
+tbody{
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+th,td{
+  border:1px solid black;
+  height: 35px;
+
 }
