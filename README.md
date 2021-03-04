@@ -7,5 +7,5 @@ Was updating all the values from the form's inputs, directly to innerHTML using 
 Which made manipulatin a "readBtn" not as easy as I thougth it would be. I believe the problem was that by the time,
 I was trying to assess it, it hadn't yet existed in the DOM.
 
-function render deletes all the created table row, and then pulls everything from the storage and adds all the books from scratch.
+function render deletes all the created table rows, and then pulls everything from the storage and adds all the books from scratch.
 
